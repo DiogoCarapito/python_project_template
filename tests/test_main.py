@@ -1,2 +1,5 @@
-def test_main_main():
-    assert main() == "hello world!"
+from app import main
+
+def test_hello():
+    assert "hello world!" == main()
+

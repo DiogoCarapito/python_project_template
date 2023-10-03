@@ -1,17 +1,23 @@
 setup:
-	python3 -m venv ~/.myrepo
+	virtualenv ~/.venv
+	source ~/.venv/bin/activate
+
 
 install:
-  pip install --upgrade pip &&\
-	  pip install -r requirements.txt
+	pip install --upgrade pip &&\
+		pip install -r requirements.txt
+
 
 test:
-	python -m pytest -vv --cov=main tests/*.py
+	python -m pytest -vv tests/*.py
+
 
 format:
-  black *.py
+	black *.py
+
 
 lint:
-	pylint --disable=R,C main.py
+	pylint --disable=R,C app.py
+
 
 all: install lint test format

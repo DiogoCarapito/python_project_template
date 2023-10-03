@@ -1,4 +1,4 @@
-pytest
-pytest-cov
-pylint
-black
+pylint==3.0.0
+pytest==7.4.2
+pytest-cov==4.1.0
+black==23.9.1
