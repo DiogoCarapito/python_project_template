@@ -4,7 +4,7 @@ install:
 
 
 test:
-	python -m pytest -vv --cov=main tests/*.py
+	python -m pytest -vv --cov=app tests/*.py
 
 
 format:
