@@ -8,7 +8,7 @@ test:
 
 
 format:
-	black *.py
+	black . *.py
 
 
 lint:
