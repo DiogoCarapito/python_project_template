@@ -9,7 +9,7 @@ install:
 
 
 test:
-	python -m pytest -vv tests/*.py
+	python -m pytest -vv --cov=main tests/*.py
 
 
 format:
@@ -17,7 +17,7 @@ format:
 
 
 lint:
-	pylint --disable=R,C app.py
+	pylint --disable=R,C main.py
 
 
 all: install lint test format
