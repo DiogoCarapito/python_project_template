@@ -1,4 +1,4 @@
-from lib.utils import func
+from mylib.utils import func
 
 
 def test_func():
