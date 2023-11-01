@@ -3,21 +3,21 @@ install:
 		pip install -r requirements.txt
 
 test:
-	pytest -vv --cov=app --cov=utils test_*.py
+	pytest -vv --cov=main --cov=utils tests/test_*.py
 
 format:
 	black . *.py
 
 lint:
-	pylint --disable=R,C *.py utils/*.py
+	pylint --disable=R,C *.py utils/*.py tests/*.py
 
-container-lint:
-	docker run -rm -i hadolint/hadolint < Dockerfile
+#container-lint:
+#	docker run -rm -i hadolint/hadolint < Dockerfile
 
 refactor:
 	format lint
 
-deploy:
-#echo "deploy not implemented"
+#deploy:
+#	echo "deploy not implemented"
 
-all: install lint test format deploy
+all: install lint test format 
