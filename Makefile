@@ -1,8 +1,3 @@
-venv:
-	python3 -m venv .venv &&/
-		source .venv/bin/activate &&/
-			make install
-
 install:
 	pip install --upgrade pip &&\
 		pip install -r requirements.txt
@@ -22,7 +17,7 @@ lint:
 refactor:
 	format lint
 
-#deploy:
-#	echo "deploy not implemented"
+deploy:
+	echo "deploy not implemented"
 
 all: install lint test format 
