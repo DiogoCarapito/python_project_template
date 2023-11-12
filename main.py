@@ -1,12 +1,6 @@
-""" A fire CLI example"""
-
-import fire
-
-
-def main(name="World"):
-    """a fire CLI example"""
-    return 'Hello {name}!'.format(name=name)
+def main():
+    return "Hello World!"
 
 
 if __name__ == "__main__":
-    fire.Fire(main)
+    main()
