@@ -4,7 +4,7 @@
 
 Personal python project template
 
-Python version_ 3.12
+Python version: 3.12
 
 ## cheat sheet
 
