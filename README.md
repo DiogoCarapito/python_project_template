@@ -8,6 +8,13 @@ Python version: 3.12
 
 ## cheat sheet
 
+### setup
+
+```bash
+mv python_project_template/.* .
+rm -r python_project_template/
+```
+
 ### venv
 
 create venv
