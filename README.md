@@ -10,9 +10,10 @@ Python version: 3.12
 
 ### setup
 
+move all files and folders to the current project folder
+
 ```bash
-mv python_project_template/.* .
-rm -r python_project_template/
+mv python_project_template/{*,.*} . && rm -r python_project_template/
 ```
 
 ### venv
