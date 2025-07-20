@@ -20,4 +20,7 @@ refactor:
 deploy:
 	echo "deploy not implemented"
 
-all: install lint test format 
+build:
+	pyinstaller --name App --onefile --windowed --icon=assets/logo.ico main.py
+
+all: install lint test format

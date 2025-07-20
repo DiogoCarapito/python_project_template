@@ -1,20 +1,12 @@
-# python_project_template
+# pyqt6_simple_app
 
-[![Github Actions Workflow](https://github.com/DiogoCarapito/python_project_template/actions/workflows/main.yaml/badge.svg)](https://github.com/DiogoCarapito/python_project_template/actions/workflows/main.yaml)
+[![Github Actions Workflow](https://github.com/DiogoCarapito/pyqt6_simple_app/actions/workflows/main.yaml/badge.svg)](https://github.com/DiogoCarapito/pyqt6_simple_app /actions/workflows/main.yaml)
 
-Personal python project template
+PyQt6 simple application template.
 
 Python version: 3.12
 
 ## cheat sheet
-
-### setup
-
-move all files and folders to the current project folder
-
-```bash
-mv python_project_template/{*,.*} . && rm -r python_project_template/
-```
 
 ### venv
 
@@ -30,10 +22,10 @@ activate venv
 source .venv/bin/activate
 ```
 
-### Docker
+### build
 
-build docker image
+build the application
 
 ```bash
-docker build -t main:latest .
+pyinstaller --name App --onefile --windowed --icon=assets/logo.ico main.py
 ```
