@@ -1,7 +1,5 @@
-from main import create_app
+from main import main
 
 
-def test_create_app():
-    app, window = create_app()
-    assert app is not None
-    assert window is not None
+def test_main():
+    assert main() is None

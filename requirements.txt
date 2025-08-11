@@ -5,9 +5,3 @@ pytest==7.4.2
 pytest-cov==4.1.0
 black==23.9.1
 #ipython==8.17.2
-
-PyQt6==6.8.0
-
-pyinstaller
-
-Pillow

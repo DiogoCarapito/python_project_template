@@ -1,8 +1,8 @@
-# pyqt6_simple_app
+# python_project_template
 
-[![Github Actions Workflow](https://github.com/DiogoCarapito/pyqt6_simple_app/actions/workflows/main.yaml/badge.svg)](https://github.com/DiogoCarapito/pyqt6_simple_app /actions/workflows/main.yaml)
+[![Github Actions Workflow](https://github.com/DiogoCarapito/python_project_template/actions/workflows/main.yaml/badge.svg)](https://github.com/DiogoCarapito/python_project_template/actions/workflows/main.yaml)
 
-PyQt6 simple application template.
+Python project template.
 
 Python version: 3.12
 
@@ -20,12 +20,4 @@ activate venv
 
 ```bash
 source .venv/bin/activate
-```
-
-### build
-
-build the application
-
-```bash
-pyinstaller --name App --onefile --windowed --icon=assets/logo.ico main.py
 ```
