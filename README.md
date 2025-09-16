@@ -1,12 +1,22 @@
-# reflex_project_template
+# python_project_template
 
-[![Github Actions Workflow](https://github.com/DiogoCarapito/reflex_project_template/actions/workflows/main.yaml/badge.svg)](https://github.com/DiogoCarapito/reflex_project_template/actions/workflows/main.yaml)
+[![Github Actions Workflow](https://github.com/DiogoCarapito/python_project_template/actions/workflows/main.yaml/badge.svg)](https://github.com/DiogoCarapito/python_project_template/actions/workflows/main.yaml)
 
-Reflex webapp project template.
+Python webapp project template.
 
 Python version: 3.12
 
 ## cheat sheet
+
+### setup
+
+copy all files (folders, hidden and non-hidden files) to the higher directory
+usefull if you clone the repo into your desired directory
+ignore if clone and after change the name of the directory
+
+```bash
+mv python_project_template/{*,.*} . && rm -r python_project_template/
+```
 
 ### venv
 
@@ -20,16 +30,4 @@ activate venv
 
 ```bash
 source .venv/bin/activate
-```
-
-### Initialize reflex
-
-```bash
-reflex init
-```
-
-### run reflex
-
-```bash
-reflex run
 ```

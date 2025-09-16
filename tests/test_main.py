@@ -1,7 +1,5 @@
-from reflex_project_template.reflex_project_template import index
+from main import main   
 
 
-def test_index_returns_component():
-    component = index()
-    assert component is not None
-    assert hasattr(component, "render") or hasattr(component, "__call__")
+def test_main(capsys):
+    assert main() is None
