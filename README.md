@@ -23,7 +23,7 @@ mv python_project_template/{*,.*} . && rm -r python_project_template/
 create venv
 
 ```bash
-python3.12 -m venv .venv
+python3.13 -m venv .venv
 ```
 
 activate venv
