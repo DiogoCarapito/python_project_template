@@ -31,3 +31,9 @@ activate venv
 ```bash
 source .venv/bin/activate
 ```
+
+### docker build and run
+
+```bash
+docker build -t python_project_template .
+```

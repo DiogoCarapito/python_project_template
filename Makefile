@@ -11,16 +11,10 @@ format:
 lint:
 	pylint --disable=R,C *.py utils/*.py tests/*.py
 
-#container-lint:
-#	docker run -rm -i hadolint/hadolint < Dockerfile
-
-refactor:
-	format lint
-
-deploy:
-	echo "deploy not implemented"
-
 build:
-	pyinstaller --name App --onefile --windowed --icon=assets/logo.ico main.py
+	docker build -t python_project_template .
 
-all: install lint test format
+run :
+	docker run --rm -it python_project_template
+
+all: install lint test format build run
